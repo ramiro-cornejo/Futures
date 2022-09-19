@@ -1,4 +1,4 @@
-Buen día/tarde/noche Ramiro.
+Buen día/tarde/noche
 
 Su número de Grupo asignado es el Nro 103.
 
@@ -10,7 +10,7 @@ El proyecto aprobado será para un potencial cliente al cual le crearán la App 
 
 Siempre teniendo como meta que sea innovador y diferenciador con respecto al mercado para su posterior comercialización.
 
-Te solicitamos notificar a todos los integrantes del equipo y subir este documento junto con el IEEE830 en la rama main creando una carpeta “Documentación” y asi iniciar con el SPRINT 0.
+Subir este documento junto con el IEEE830 en la rama main creando una carpeta “Documentación” y asi iniciar con el SPRINT 0.
 
 Les sugerimos que se registren en el formulario Registro de grupos  link   ya que no contamos con sus datos y avisar de su registro por favor.
 
