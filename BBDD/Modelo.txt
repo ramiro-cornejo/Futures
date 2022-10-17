@@ -1,0 +1,32 @@
+
+Modelado de Datos:
+
+- Identificar tipos de entidades.
+- Identificar atributos.
+- Aplicar convenciones de nomenclatura.
+- Identificar relaciones.
+- Aplicar modelos de modelos de datos.
+- Asignar claves.
+- Normalizar para reducir la redundancia de datos.
+- Desnormalizar para mejorar el rendimiento.
+
+----------------------------------------------------
+
+
+- Entidades: 
+* Proyecto grupal 
+* Integrantes
+* CV 
+
+- Atributos: 
+* Fecha de entrega 
+* Descripción del proyecto
+* Nombre y Apellido 
+* Link de repositorio 
+* Link de portfolio
+
+- Nomenclatura:
+
+- Relaciones:
+
+- Claves:
