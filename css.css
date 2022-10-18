@@ -1,101 +1,57 @@
-body {
-    background-image: url('/imagenes/descarga.jfif');  
-    text-align: center;
-    font-size: 90%;
-    }
-  
-header {
-    text-align: center;
-    border-inline-color: darkslategrey;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-header>h1 {
-    font-size: 400%;
-}
 
-.logo { 
-    border-color: white;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 50%;
-    }
-
-.menu>h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 15%;
-    background-color: ghostwhite;
-    margin-left: auto;
-    margin-right: auto;
-   }
-
-h1 {
-    text-align: center;
-    font-family:monospace;
-    font-size: 300%;
-    color: white;
-    background-color: darkcyan;
-    border-radius: 99%;
-    border-style:double;
-    width: 18%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
- .ingresar{
-    width: 25%;
-    background-color: ghostwhite;
-    margin-left: 10%;
-    margin-right: 90%;
-    margin-bottom: auto;
-    margin-top: auto;
-    font-family:  Verdana, Geneva, Tahoma, sans-serif;
-    border-style: inset;
-    }
-
- .expl {
-    font-family:  Verdana, Geneva, Tahoma, sans-serif;
-    text-justify: auto;
-    background-color: ghostwhite;
-    width: auto;
- }
-
- footer {
+.tarjetas{
     display: flex;
-    background-color: gray;
-    height: 250px;
-
-   /* font-family:Verdana, Geneva, Tahoma, sans-serif;
-     background-color: aliceblue;
-     width: 25%;
-     margin-left: 70%;
-    margin-right: 30%;
-    padding-top: 1em;
-    border-top-style: inset;*/
- }
-
-footer ul{
-    list-style-type: none;
+    justify-content: center;
+    justify-content: space-around;
     
+
 }
 
-footer ul li {
-    
-    font-size: large;
-    font-weight: bolder;
+
+.footer{
+    margin-top: 50px;
 }
 
-h4{
+.card-body-footer{
+    background-color: black;
+}
+
+.card-title{
+    color: white;
+}
+
+.card-text{
+    color: white;
+}
+
+.card-header{
     font-size: larger;
-    font-weight: bold;
-    color: blue;
+    font-weight: bolder;
   
 }
-p:hover {
-    color: purple;
-    font-size: 105%;
+
+.ispc-blanco{
+    height: 80px;
 }
 
-.logo-negro{
-    margin-top: 50px;
-    margin-left: 50%;
+.texto-carrousel{
+    color: black;
 }
+
+/*fin-index*/
+
+
+/*login*/
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*fin login*/
