@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 .tarjetas{
     display: flex;
@@ -23,11 +27,11 @@
 }
 
 .card-title{
-    color: white;
+    color:black;
 }
 
 .card-text{
-    color: white;
+    color: black;
 }
 
 .card-header{
@@ -41,17 +45,44 @@
 }
 
 .texto-carrousel{
-    color: black;
+    color:black;
+    font-weight: bolder;
+   
+
 }
 
-/*fin-index*/
+.carrusel{
+    margin-bottom: 5%;
+}
+
+/*FIN-INDEX*/
 
 
-/*login*/
+/*LOGIN*/
 .formulario{
     display: flex;
     justify-content: center;
+    margin-bottom: 15%;
 }
 
 
-/*fin login*/
+
+/*FIN LOGIN*/
+
+/*CONOCENOS*/
+.section-conocenos{
+    text-align: center;
+    
+    
+}
+
+/*FIN CONOCENOS*/
+
+/*FOOTER*/
+
+.copy-ispc{
+    color: rgb(32, 134, 218);
+    font-weight: bolder;
+}
+
+/*FIN FOOTER*/
