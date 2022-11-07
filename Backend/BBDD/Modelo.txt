@@ -12,7 +12,6 @@ Modelado de Datos:
 
 ----------------------------------------------------
 
-
 - Entidades: 
 * Proyecto grupal 
 * Integrantes
