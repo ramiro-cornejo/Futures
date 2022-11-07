@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    
+
+}
+
+
+.footer{
+    margin-top: 50px;
+}
+
+.card-body-footer{
+    background-color: black;
+}
+
+.card-title{
+    color:black;
+}
+
+.card-text{
+    color: black;
+}
+
+.card-header{
+    font-size: larger;
+    font-weight: bolder;
+  
+}
+
+.ispc-blanco{
+    height: 80px;
+}
+
+.texto-carrousel{
+    color:black;
+    font-weight: bolder;
+   
+
+}
+
+.carrusel{
+    margin-bottom: 5%;
+}
+
+/*FIN-INDEX*/
+
+
+/*LOGIN*/
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15%;
+}
+
+
+
+/*FIN LOGIN*/
+
+/*CONOCENOS*/
+.section-conocenos{
+    text-align: center;
+    
+    
+}
+
+/*FIN CONOCENOS*/
+
+/*FOOTER*/
+
+.copy-ispc{
+    color: rgb(32, 134, 218);
+    font-weight: bolder;
+}
+
+/*FIN FOOTER*/
