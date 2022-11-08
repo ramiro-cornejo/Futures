@@ -1,3 +1,4 @@
+## Diagrama Entidad Relación
 
 Modelado de Datos:
 
@@ -13,14 +14,15 @@ Modelado de Datos:
 ----------------------------------------------------
 
 - Entidades: 
-* Proyecto grupal 
-* Integrantes
-* CV 
+* Usuario
+* Proyecto 
 
 - Atributos: 
 * Fecha de entrega 
-* Descripción del proyecto
-* Nombre y Apellido 
+* Nombre
+* Apellido 
+* DNI
+* Mail
 * Link de repositorio 
 * Link de portfolio
 

@@ -1,0 +1,28 @@
+## Importé la librería deseada
+import sqlite3
+
+## Conecté la base de datos a mi archivo
+miConexion = sqlite3.connect ("FirstDataBase")
+
+## Creo un cursor
+miCursor = miConexion.cursor ()
+
+## Creo una tabla "Usuario"
+##miCursor.execute ("CREATE TABLE Usuario (DNI int, Nombre varchar (35), Apellido varchar (35), Mail varchar (35), ProyectoName varchar (70), LinkRepo varchar (70))")
+
+## Inserto valores a la tabla "Usuario"
+##miCursor.execute ("INSERT INTO Usuario (DNI, Nombre, Apellido, Mail, ProyectoName, LinkRepo) VALUES (32892498, 'Daiana', 'Senese', 'dsenese@gmail.com', 'Futures', 'https://github.com/dsenese')")
+
+## Creo una lista con varias tuplas con valores para la tabla "Usuario"
+variosUsuarios = [ 
+    (31980695, 'Cecilia', 'Diaz', 'cdiaz@gmail.com', 'Futures', 'https://github.com/cdiaz'),
+    (32034054, 'Meulen', 'Cordero', 'mcordero@gmail.com', 'Futures', 'https://github.com/mcordero'),
+    (33901123, 'Gutierrez', 'Emma', 'egutirrez@gmail.com', 'Futures', 'https://github.com/egutierrez'),
+    (34669558, 'Cornejo', 'Ramiro', 'rcornejo@gmail.com', 'Futures', 'https://github.com/rcornejo'),
+    (35475829, 'Robles', 'Haziel', 'hrobles@gmail.com', 'Futures', 'https://github.com/hrobles'),
+    (29543939, 'Brandon', 'Bertino', 'bbertino@gmail.com', 'Futures', 'https://github.com/bbertino'),
+    (27994448, 'Gaitán', 'Gabriel', 'ggaitan@gmail.com', 'Futures', 'https://github.com/ggaitan')
+]
+miConexion.commit ()
+
+miConexion.close ()
