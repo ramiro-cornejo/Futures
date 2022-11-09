@@ -23,6 +23,19 @@ variosUsuarios = [
     (29543939, 'Brandon', 'Bertino', 'bbertino@gmail.com', 'Futures', 'https://github.com/bbertino'),
     (27994448, 'Gaitán', 'Gabriel', 'ggaitan@gmail.com', 'Futures', 'https://github.com/ggaitan')
 ]
+
+## Inserto los valores de la lista en la tabla "Usuario"
+miCursor.executemany ("INSERT INTO Usuario VALUES (?,?,?,?,?,?)", variosUsuarios)
+
+## Hago un SELECT
+miCursor.execute ("SELECT * FROM Usuario")
+variosUsuarios = miCursor.fetchall ()
+print (variosUsuarios)
+
+## Creo un for para recolectar los datos que necesite
+for Usuarios in variosUsuarios:
+    print ("DNI: " + str (Usuarios [0]), "Nombre: " + Usuarios [1], "Apellido: " + Usuarios [2], "Mail: " + Usuarios [3], "ProyectoName: " + Usuarios [4], "LinkRepo: " + Usuarios [5])
+
 miConexion.commit ()
 
 miConexion.close ()
