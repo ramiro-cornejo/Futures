@@ -18,13 +18,14 @@ Modelado de Datos:
 * Proyecto 
 
 - Atributos: 
-* Fecha de entrega 
+* Fecha 
 * Nombre
 * Apellido 
 * DNI
 * Mail
+* ProyectoName
 * Link de repositorio 
-* Link de portfolio
+
 
 - Nomenclatura:
 
