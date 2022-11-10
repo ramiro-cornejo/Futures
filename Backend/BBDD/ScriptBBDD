@@ -8,24 +8,24 @@ miConexion = sqlite3.connect ("FirstDataBase")
 miCursor = miConexion.cursor ()
 
 ## Creo una tabla "Usuario"
-miCursor.execute ("CREATE TABLE Usuario (DNI int Primary Key, Nombre varchar (35), Apellido varchar (35), Mail varchar (35), ProyectoName varchar (70), LinkRepo varchar (70))")
+miCursor.execute ("CREATE TABLE Usuario (ID_Usuario int Primary Key AUTOINCREMENT, DNI int, Nombre varchar (35), Apellido varchar (35), Mail varchar (35), ProyectoName varchar (70), LinkRepo varchar (70))")
 
 ## Inserto valores a la tabla "Usuario"
-miCursor.execute ("INSERT INTO Usuario (DNI, Nombre, Apellido, Mail, ProyectoName, LinkRepo) VALUES (32892498, 'Daiana', 'Senese', 'dsenese@gmail.com', 'Futures', 'https://github.com/dsenese')")
+miCursor.execute ("INSERT INTO Usuario (ID_Usuario, DNI, Nombre, Apellido, Mail, ProyectoName, LinkRepo) VALUES (1, 32892498, 'Daiana', 'Senese', 'dsenese@gmail.com', 'Futures', 'https://github.com/dsenese')")
 
 ## Creo una lista con varias tuplas con valores para la tabla "Usuario"
 variosUsuarios = [ 
-(31980695, 'Cecilia', 'Diaz', 'cdiaz@gmail.com', 'Futures', 'https://github.com/cdiaz'),
-(32034054, 'Meulen', 'Cordero', 'mcordero@gmail.com', 'Futures', 'https://github.com/mcordero'),
-(33901123, 'Gutierrez', 'Emma', 'egutirrez@gmail.com', 'Futures', 'https://github.com/egutierrez'),
-(34669558, 'Cornejo', 'Ramiro', 'rcornejo@gmail.com', 'Futures', 'https://github.com/rcornejo'),
-(35475829, 'Robles', 'Haziel', 'hrobles@gmail.com', 'Futures', 'https://github.com/hrobles'),
-(29543939, 'Brandon', 'Bertino', 'bbertino@gmail.com', 'Futures', 'https://github.com/bbertino'),
-(27994448, 'Gaitán', 'Gabriel', 'ggaitan@gmail.com', 'Futures', 'https://github.com/ggaitan')
+(2, 31980695, 'Cecilia', 'Diaz', 'cdiaz@gmail.com', 'Futures', 'https://github.com/cdiaz'),
+(3, 32034054, 'Meulen', 'Cordero', 'mcordero@gmail.com', 'Futures', 'https://github.com/mcordero'),
+(4, 33901123, 'Gutierrez', 'Emma', 'egutirrez@gmail.com', 'Futures', 'https://github.com/egutierrez'),
+(5, 34669558, 'Cornejo', 'Ramiro', 'rcornejo@gmail.com', 'Futures', 'https://github.com/rcornejo'),
+(6, 35475829, 'Robles', 'Haziel', 'hrobles@gmail.com', 'Futures', 'https://github.com/hrobles'),
+(7, 29543939, 'Brandon', 'Bertino', 'bbertino@gmail.com', 'Futures', 'https://github.com/bbertino'),
+(8, 27994448, 'Gaitán', 'Gabriel', 'ggaitan@gmail.com', 'Futures', 'https://github.com/ggaitan')
 ]
 
 ## Inserto los valores de la lista en la tabla "Usuario"
-miCursor.executemany ("INSERT INTO Usuario VALUES (?,?,?,?,?,?)", variosUsuarios)
+miCursor.executemany ("INSERT INTO Usuario VALUES (NULL,?,?,?,?,?)", variosUsuarios)
 
 ## Hago un SELECT
 miCursor.execute ("SELECT * FROM Usuario")
@@ -34,10 +34,10 @@ print (variosUsuarios)
 
 ## Creo un for para recolectar los datos que necesite
 for Usuarios in variosUsuarios:
-    print ("DNI: " + str (Usuarios [0]), "Nombre: " + Usuarios [1], "Apellido: " + Usuarios [2], "Mail: " + Usuarios [3], "ProyectoName: " + Usuarios [4], "LinkRepo: " + Usuarios [5])
+    print ("ID_Usuario" + str (Usuarios [0]), "DNI: " + str (Usuarios [1]), "Nombre: " + Usuarios [2], "Apellido: " + Usuarios [3], "Mail: " + Usuarios [4], "ProyectoName: " + Usuarios [5], "LinkRepo: " + Usuarios [6])
 
 ## Creo la tabla "Admin"
-miCursor.execute ("CREATE TABLE Admin (DNIAdmin int not null auto_increment Primary Key, NombreAdmin varchar (30), ApellidoAdmin varchar (30), MailAdmin varchar (30))")
+miCursor.execute ("CREATE TABLE Admin (DNIAdmin int Primary Key, NombreAdmin varchar (30), ApellidoAdmin varchar (30), MailAdmin varchar (30))")
 
 ## Inserto valores en la tabla "Admin"
 miCursor.execute ("INSERT INTO Admin VALUES (32892498, 'Daiana', 'Senese', 'dsenese@gmail.com')")
