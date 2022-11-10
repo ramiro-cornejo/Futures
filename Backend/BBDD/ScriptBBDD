@@ -8,10 +8,10 @@ miConexion = sqlite3.connect ("FirstDataBase")
 miCursor = miConexion.cursor ()
 
 ## Creo una tabla "Usuario"
-##miCursor.execute ("CREATE TABLE Usuario (DNI int Primary Key, Nombre varchar (35), Apellido varchar (35), Mail varchar (35), ProyectoName varchar (70), LinkRepo varchar (70))")
+miCursor.execute ("CREATE TABLE Usuario (DNI int Primary Key, Nombre varchar (35), Apellido varchar (35), Mail varchar (35), ProyectoName varchar (70), LinkRepo varchar (70))")
 
 ## Inserto valores a la tabla "Usuario"
-##miCursor.execute ("INSERT INTO Usuario (DNI, Nombre, Apellido, Mail, ProyectoName, LinkRepo) VALUES (32892498, 'Daiana', 'Senese', 'dsenese@gmail.com', 'Futures', 'https://github.com/dsenese')")
+miCursor.execute ("INSERT INTO Usuario (DNI, Nombre, Apellido, Mail, ProyectoName, LinkRepo) VALUES (32892498, 'Daiana', 'Senese', 'dsenese@gmail.com', 'Futures', 'https://github.com/dsenese')")
 
 ## Creo una lista con varias tuplas con valores para la tabla "Usuario"
 variosUsuarios = [ 
@@ -25,10 +25,10 @@ variosUsuarios = [
 ]
 
 ## Inserto los valores de la lista en la tabla "Usuario"
-##miCursor.executemany ("INSERT INTO Usuario VALUES (?,?,?,?,?,?)", variosUsuarios)
+miCursor.executemany ("INSERT INTO Usuario VALUES (?,?,?,?,?,?)", variosUsuarios)
 
 ## Hago un SELECT
-##miCursor.execute ("SELECT * FROM Usuario")
+miCursor.execute ("SELECT * FROM Usuario")
 variosUsuarios = miCursor.fetchall ()
 print (variosUsuarios)
 
@@ -36,8 +36,14 @@ print (variosUsuarios)
 for Usuarios in variosUsuarios:
     print ("DNI: " + str (Usuarios [0]), "Nombre: " + Usuarios [1], "Apellido: " + Usuarios [2], "Mail: " + Usuarios [3], "ProyectoName: " + Usuarios [4], "LinkRepo: " + Usuarios [5])
 
+## Creo la tabla "Admin"
+miCursor.execute ("CREATE TABLE Admin (DNIAdmin int not null auto_increment Primary Key, NombreAdmin varchar (30), ApellidoAdmin varchar (30), MailAdmin varchar (30))")
+
+## Inserto valores en la tabla "Admin"
+miCursor.execute ("INSERT INTO Admin VALUES (32892498, 'Daiana', 'Senese', 'dsenese@gmail.com')")
+
 ## Creo la tabla "Proyecto"
-##miCursor.execute ("CREATE TABLE Proyecto (ProyectoName varchar (30) Primary Key, Año date, LinkProyecto varchar (50))")
+miCursor.execute ("CREATE TABLE Proyecto (ProyectoName varchar (30) Primary Key, Año date, LinkProyecto varchar (50))")
 
 ## Creo una lista con tuplas de datos para insertar en la tabla "Proyecto"
 Proyecto = [
@@ -47,13 +53,11 @@ Proyecto = [
 ] 
 
 ## Inserto los valores a la tabla "Proyecto"
-
 miCursor.executemany ("INSERT INTO Proyecto VALUES (?,?,?)", Proyecto)
-
 
 ## Incorporo un commit para que se acepten las transacciones.
 miConexion.commit ()
 
-
 ## Cierro mi BBDD 
 miConexion.close ()
+
