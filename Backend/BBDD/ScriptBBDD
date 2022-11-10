@@ -15,13 +15,13 @@ miCursor.execute ("INSERT INTO Usuario (ID_Usuario, DNI, Nombre, Apellido, Mail,
 
 ## Creo una lista con varias tuplas con valores para la tabla "Usuario"
 variosUsuarios = [ 
-(2, 31980695, 'Cecilia', 'Diaz', 'cdiaz@gmail.com', 'Futures', 'https://github.com/cdiaz'),
-(3, 32034054, 'Meulen', 'Cordero', 'mcordero@gmail.com', 'Futures', 'https://github.com/mcordero'),
-(4, 33901123, 'Gutierrez', 'Emma', 'egutirrez@gmail.com', 'Futures', 'https://github.com/egutierrez'),
-(5, 34669558, 'Cornejo', 'Ramiro', 'rcornejo@gmail.com', 'Futures', 'https://github.com/rcornejo'),
-(6, 35475829, 'Robles', 'Haziel', 'hrobles@gmail.com', 'Futures', 'https://github.com/hrobles'),
-(7, 29543939, 'Brandon', 'Bertino', 'bbertino@gmail.com', 'Futures', 'https://github.com/bbertino'),
-(8, 27994448, 'Gaitán', 'Gabriel', 'ggaitan@gmail.com', 'Futures', 'https://github.com/ggaitan')
+('NULL', 31980695, 'Cecilia', 'Diaz', 'cdiaz@gmail.com', 'Futures', 'https://github.com/cdiaz'),
+('NULL', 32034054, 'Meulen', 'Cordero', 'mcordero@gmail.com', 'Futures', 'https://github.com/mcordero'),
+('NULL', 33901123, 'Gutierrez', 'Emma', 'egutirrez@gmail.com', 'Futures', 'https://github.com/egutierrez'),
+('NULL', 34669558, 'Cornejo', 'Ramiro', 'rcornejo@gmail.com', 'Futures', 'https://github.com/rcornejo'),
+('NULL', 35475829, 'Robles', 'Haziel', 'hrobles@gmail.com', 'Futures', 'https://github.com/hrobles'),
+('NULL', 29543939, 'Brandon', 'Bertino', 'bbertino@gmail.com', 'Futures', 'https://github.com/bbertino'),
+('NULL', 27994448, 'Gaitán', 'Gabriel', 'ggaitan@gmail.com', 'Futures', 'https://github.com/ggaitan')
 ]
 
 ## Inserto los valores de la lista en la tabla "Usuario"
@@ -43,7 +43,7 @@ miCursor.execute ("CREATE TABLE Admin (DNIAdmin int Primary Key, NombreAdmin var
 miCursor.execute ("INSERT INTO Admin VALUES (32892498, 'Daiana', 'Senese', 'dsenese@gmail.com')")
 
 ## Creo la tabla "Proyecto"
-miCursor.execute ("CREATE TABLE Proyecto (ProyectoName varchar (30) Primary Key, Año date, LinkProyecto varchar (50))")
+miCursor.execute ("CREATE TABLE Proyecto (ProyectoName varchar (30) UNIQUE Primary Key, Año date, LinkProyecto varchar (50))")
 
 ## Creo una lista con tuplas de datos para insertar en la tabla "Proyecto"
 Proyecto = [
