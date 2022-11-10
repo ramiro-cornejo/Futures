@@ -2,7 +2,7 @@
 import sqlite3
 
 ## Conecté la base de datos a mi archivo
-miConexion = sqlite3.connect ("FirstDataBase")
+miConexion = sqlite3.connect ("ScriptBBDD")
 
 ## Creo un cursor
 miCursor = miConexion.cursor ()
@@ -35,6 +35,10 @@ print (variosUsuarios)
 ## Creo un for para recolectar los datos que necesite
 for Usuarios in variosUsuarios:
     print ("DNI: " + str (Usuarios [0]), "Nombre: " + Usuarios [1], "Apellido: " + Usuarios [2], "Mail: " + Usuarios [3], "ProyectoName: " + Usuarios [4], "LinkRepo: " + Usuarios [5])
+
+## Creo la tabla "Admin"
+miCursor.execute ("CREATE TABLE Admin (DNIAdmin int Primary Key, NombreAdmin varchar (20), ApellidoAdmin varchar (20), MailAdmin varchar (30)")
+
 
 ## Creo la tabla "Proyecto"
 ##miCursor.execute ("CREATE TABLE Proyecto (ProyectoName varchar (30) Primary Key, Año date, LinkProyecto varchar (50))")
