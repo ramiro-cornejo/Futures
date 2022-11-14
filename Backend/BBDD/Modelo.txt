@@ -1,0 +1,35 @@
+## Diagrama Entidad Relación
+
+Modelado de Datos:
+
+- Identificar tipos de entidades.
+- Identificar atributos.
+- Aplicar convenciones de nomenclatura.
+- Identificar relaciones.
+- Aplicar modelos de modelos de datos.
+- Asignar claves.
+- Normalizar para reducir la redundancia de datos.
+- Desnormalizar para mejorar el rendimiento.
+
+----------------------------------------------------
+
+- Entidades: 
+* Usuario
+* Proyecto 
+
+- Atributos: 
+* Fecha 
+* Nombre
+* Apellido 
+* DNI
+* Mail
+* ProyectoName
+* Link de repositorio 
+
+
+- Nomenclatura:
+
+- Relaciones:
+
+- Claves:
+
