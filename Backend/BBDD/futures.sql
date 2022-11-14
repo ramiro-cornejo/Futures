@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-11-2022 a las 19:35:43
+-- Tiempo de generación: 14-11-2022 a las 23:13:04
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -67,10 +67,10 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`ID_User`, `NombreUser`, `ApellidoUser`, `DNI_User`, `MailUser`, `Link_Repo`) VALUES
-(1, '', '[value-4]', 0, '', ''),
-(2, '', '[value-4]', 0, '', ''),
-(3, '', '[value-4]', 0, '', ''),
-(4, '', '[value-4]', 0, '', ''),
+(1, 'Daiana', 'Senese', 32892498, 'dsenese@gmail.com', 'https://github.com/dsenese'),
+(2, 'Cecilia', 'Diaz', 23594827, 'cdiaz@gmail.com', 'https://github.com/cdiaz'),
+(3, 'Meulen', 'Cordero', 23938271, 'mcordero@gmail.com', 'https://github.com/mcordero'),
+(4, 'Ramiro', 'Cornejo', 32332583, 'rcornejo@gmail.com', 'https://github.com/rcornejo'),
 (5, '', '[value-4]', 0, '', ''),
 (6, '', '[value-4]', 0, '', ''),
 (7, '', '[value-4]', 0, '', '');
@@ -118,6 +118,22 @@ ALTER TABLE `proyecto`
 --
 ALTER TABLE `usuario`
   MODIFY `ID_User` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `admin`
+--
+ALTER TABLE `admin`
+  ADD CONSTRAINT `admin_ibfk_1` FOREIGN KEY (`ID_Admin`) REFERENCES `usuario` (`ID_User`);
+
+--
+-- Filtros para la tabla `proyecto`
+--
+ALTER TABLE `proyecto`
+  ADD CONSTRAINT `proyecto_ibfk_1` FOREIGN KEY (`ID_Proyecto`) REFERENCES `admin` (`ID_Admin`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
