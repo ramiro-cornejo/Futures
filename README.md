@@ -1,6 +1,6 @@
 Proyecto Full Stack - TSDWAD
 
-LINK del sitio funcional: http://w300219.ferozo.com/login.html
+LINK del sitio funcional: http://w300219.ferozo.com/index.html
 
 FUTURES
 
