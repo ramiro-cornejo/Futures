@@ -4,14 +4,14 @@ import usuario
 usuario = []    
 
 def mostrar_opciones():
-    print('CRUD EJEMPLO')
+    print('CRUD')
     print('*' * 50)
     print('Selecciona una opción:')
     print('[C]reate')
-    print('[R]ead - Leer')
-    print('[U]pdate - Actualizar')
-    print('[D]elete  - Elimnar')
-    print('[S]ALIR')
+    print('[R]ead')
+    print('[U]pdate')
+    print('[D]elete')
+    print('[S]alir')
 
     
 
