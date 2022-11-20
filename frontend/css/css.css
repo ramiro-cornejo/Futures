@@ -51,8 +51,8 @@ h2 {
 .texto-carrousel {
     color: black;
     font-weight: bolder;
-
-
+    text-align: center;
+    
 }
 
 .carrusel {
@@ -97,7 +97,7 @@ h2 {
     color: rgb(32, 134, 218);
     display: inline-block;
     position: relative;
-    font-size: 4rem;
+    font-size: 2rem;
     margin-top: 5%;
     margin-bottom: 2%;
 }

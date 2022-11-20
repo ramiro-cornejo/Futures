@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-Proyecto Full Stack - TSDAD
-=======
-Proyecto Full Stack - TSDWAD
->>>>>>> f8af53dde7e6a2434ca06b62708d791b15bf2126
-
 FUTURES
 
 Proyecto en el cual se pueden registrar alumnos/as del ISPC mostrando sus proyectos realizados, brindando datos, conocimientos, cv para que empresas o reclutadores puedan tener en cuenta ese talento para futuros empleos o contacto inmediato.
